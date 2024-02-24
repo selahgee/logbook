@@ -1,0 +1,60 @@
+body {
+    background-image: url('images/background.jpg'); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form, h2, p {
+    color: #333;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styling for signup_choice.php */
+a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Additional styling for signup.php */
+/* Customize as needed based on your form fields */
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}

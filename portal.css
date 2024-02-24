@@ -1,0 +1,149 @@
+/* Reset some default styles for consistency */
+body {
+    background-image: url('images/background.jpg'); 
+    background-size: cover;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+}
+
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Basic styling for the portal container */
+.portal-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for the welcome header */
+.welcome-header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the countdown */
+#demo {
+    font-size: 30px;
+}
+
+/* Styling for the dashboard */
+.dashboard {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dashboard-left, .dashboard-right, .dashboard-total {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.dashboard-left table, .dashboard-right table, .dashboard-total table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.dashboard-left th, .dashboard-right th, .dashboard-total th,
+.dashboard-left td, .dashboard-right td, .dashboard-total td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.dashboard-left th, .dashboard-right th, .dashboard-total th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dashboard-left tbody td, .dashboard-right tbody td, .dashboard-total tbody td {
+    background-color: #f9f9f9;
+}
+
+/* Styling for assignment tables */
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styling for the total pending and completed table */
+table:last-child {
+    margin-top: 40px;
+}
+
+/* Styling for mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .portal-container {
+        padding: 10px;
+    }
+
+    .welcome-header {
+        padding: 10px;
+    }
+
+    #demo {
+        font-size: 20px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+        .dashboard {
+            flex-direction: column;
+        }
+    
+        .dashboard-left, .dashboard-right, .dashboard-total {
+            margin: 10px 0;
+        }
+    p {
+        margin-bottom: 10px;
+    }
+    
+    /* Style the form for file upload */
+    form {
+        margin-top: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="file"] {
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+}
